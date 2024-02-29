@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  app:
+    container_name: softex-backend
+    image: softex-backend
+    build:
+      context: .
+      dockerfile: ./Dockerfile.dev
+    command: npm run start:dev
+    ports:
+      - 3010:3010
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=develop
+      - PORT=3010
+      - MONGO_URI=mongodb+srv://torikul:torikul024@cluster0.7skih.mongodb.net/?retryWrites=true&w=majority
+      - DB_NAME=softex_db

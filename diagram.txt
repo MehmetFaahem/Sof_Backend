@@ -1,0 +1,135 @@
+Database Schema :
+1. hero section:
+    image
+    title
+    sub_title
+    content
+
+2. partners
+    company_name
+    logo
+    alt
+
+3. about-us
+    title
+    sub_title
+    content
+    image 
+    video
+    total_project
+    total_project_text
+    team_member
+    team_member_text
+    rating
+    rating_text
+
+4. Our services
+    title
+    sub_title
+    content
+    services: [
+        {
+            logo
+            title
+            content
+        } 
+    ],
+    details: [
+       {  
+        thumbnail
+        title
+        content
+        service_list: [string]
+     }
+    ]
+
+5. management
+    title
+    sub_title
+    content
+    thumbnail
+    image
+    list: [
+        {
+            logo
+            title 
+            content
+        }
+    ]
+    
+6. case studies 
+    title 
+    sub_title
+    content
+    list: [
+        {
+            thumbnail
+            title 
+            sub_title
+            category
+        }
+    ]
+
+7. our team 
+    title 
+    sub_title
+    content
+    members: [
+        {
+            image 
+            full_name
+            designation
+            social_links: [
+                {
+                    fecebook_link: 
+                },
+                {
+                    twitter_link: 
+                },
+                {
+                    linkedin_link: 
+                }
+            ]
+        }
+    ]
+
+8. price plan
+    title
+    sub_title
+    content
+    plans: [
+        {
+            name 
+            icon
+            services :[
+                {
+                    name 
+                    price
+                    currency: USD/EUR/JPY
+                }
+            ]
+        }
+    ]
+
+9. testimonial
+    title
+    sub_title
+    content
+    reviews: [
+        author 
+        content
+        avatar
+        location
+        designation
+        rating
+    ]
+
+10. contact-us
+    full_name
+    email
+    contact_no
+    facebook_link
+    message
+    attached_file
+    budget 
+    
